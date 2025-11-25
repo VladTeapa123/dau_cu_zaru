@@ -4,7 +4,7 @@ LANGUAGE=$1
 OUTPUT="output.txt"
 
 if [ "$LANGUAGE" == "py" ]; then
-	python zar_py.py > "$OUTPUT"
+	python3 zar_py.py > "$OUTPUT"
 elif [ "$LANGUAGE" == "c" ]; then
 	gcc zar_c.c -o zar_c_exec
 	./zar_c_exec > "$OUTPUT"
@@ -22,4 +22,4 @@ fi
 
 echo "Dau cu zaru $RESULT"
 
-rm -f "$OUTPUT"
+rm -f "$OUTPUT" "zar_c_exec"
