@@ -14,7 +14,7 @@ read ZAR1 ZAR2 < "$OUTPUT"
 
 if [ "$ZAR1" -eq 6 ] && [ "$ZAR2" -eq 6 ]; then
 	RESULT="6 6 ca mine nu se mai naste"
-elif [ "$ZAR1" -e1 6 ] && [ "$ZAR2" -eq 5 ]; then
+elif [ "$ZAR1" -eq 6 ] && [ "$ZAR2" -eq 5 ]; then
 	RESULT="6 5 n-am nevoie de servici"
 else
 	RESULT="$ZAR1 $ZAR2"
