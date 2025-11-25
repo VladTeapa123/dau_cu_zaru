@@ -8,6 +8,11 @@ int main(){
 
 	int zar1 = 1 + rand() % 6;
 	int zar2 = 1 + rand() % 6;
+	if (zar1 == 5 && zar2 == 6) {
+		int aux = zar1;
+		zar1 = zar2;
+		zar2 = aux;
+	}
 
 	printf("%d %d\n", zar1, zar2);
 
